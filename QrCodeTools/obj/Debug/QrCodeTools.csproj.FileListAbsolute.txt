@@ -1,0 +1,6 @@
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\QrCodeTools\obj\Debug\QrCodeTools.csprojAssemblyReference.cache
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\QrCodeTools\obj\Debug\Pages\ShellView.g.cs
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\QrCodeTools\obj\Debug\App.g.cs
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\QrCodeTools\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\QrCodeTools\obj\Debug\QrCodeTools_MarkupCompile.cache
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\QrCodeTools\obj\Debug\QrCodeTools_MarkupCompile.lref

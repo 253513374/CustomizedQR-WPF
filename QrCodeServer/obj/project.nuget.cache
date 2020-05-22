@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "xhLZwVP6C516JCRMGlsOMHRyJXZ79FdQ7MtcX2EHi1KVfcWPFOisDZ8MDI2OMdEmp/BvONtXFPmiXuE/ciYeOQ==",
+  "success": true,
+  "projectFilePath": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\QrCodeServer\\QrCodeServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\q4528\\.nuget\\packages\\controlzex\\4.0.0-alpha0303\\controlzex.4.0.0-alpha0303.nupkg.sha512",
+    "C:\\Users\\q4528\\.nuget\\packages\\emgu.cv\\4.1.0.3420\\emgu.cv.4.1.0.3420.nupkg.sha512",
+    "C:\\Users\\q4528\\.nuget\\packages\\fody\\5.0.6\\fody.5.0.6.nupkg.sha512",
+    "C:\\Users\\q4528\\.nuget\\packages\\hprose\\1.5.7\\hprose.1.5.7.nupkg.sha512",
+    "C:\\Users\\q4528\\.nuget\\packages\\mahapps.metro\\2.0.0-alpha0391\\mahapps.metro.2.0.0-alpha0391.nupkg.sha512",
+    "C:\\Users\\q4528\\.nuget\\packages\\mahapps.metro.iconpacks\\3.0.0-alpha0186\\mahapps.metro.iconpacks.3.0.0-alpha0186.nupkg.sha512",
+    "C:\\Users\\q4528\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.0.1\\microsoft.xaml.behaviors.wpf.1.0.1.nupkg.sha512",
+    "C:\\Users\\q4528\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\q4528\\.nuget\\packages\\propertychanged.fody\\3.0.1\\propertychanged.fody.3.0.1.nupkg.sha512",
+    "C:\\Users\\q4528\\.nuget\\packages\\zedgraph\\5.1.7\\zedgraph.5.1.7.nupkg.sha512",
+    "C:\\Users\\q4528\\.nuget\\packages\\zxing.net\\0.16.4\\zxing.net.0.16.4.nupkg.sha512"
+  ],
+  "logs": []
+}

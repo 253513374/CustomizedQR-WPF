@@ -1,0 +1,1203 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6": {
+      "ControlzEx/4.0.0-alpha0303": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.0.1"
+        },
+        "compile": {
+          "lib/net45/ControlzEx.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ControlzEx.dll": {}
+        }
+      },
+      "EMGU.CV/4.1.0.3420": {
+        "type": "package",
+        "dependencies": {
+          "ZedGraph": "[5.1.7]"
+        },
+        "compile": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Fody/5.0.6": {
+        "type": "package",
+        "build": {
+          "build/Fody.targets": {}
+        }
+      },
+      "Hprose/1.5.7": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Hprose.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Hprose.dll": {}
+        }
+      },
+      "MahApps.Metro/2.0.0-alpha0391": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[4.0.0-alpha0303, 5.0.0)"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net46/MahApps.Metro.dll": {}
+        },
+        "runtime": {
+          "lib/net46/MahApps.Metro.dll": {}
+        }
+      },
+      "MahApps.Metro.IconPacks/3.0.0-alpha0186": {
+        "type": "package",
+        "compile": {
+          "lib/net46/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/net46/MahApps.Metro.IconPacks.dll": {}
+        },
+        "runtime": {
+          "lib/net46/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/net46/MahApps.Metro.IconPacks.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PropertyChanged.Fody/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "5.0.6"
+        },
+        "compile": {
+          "lib/net452/PropertyChanged.dll": {}
+        },
+        "runtime": {
+          "lib/net452/PropertyChanged.dll": {}
+        },
+        "build": {
+          "build/PropertyChanged.Fody.props": {}
+        }
+      },
+      "ZedGraph/5.1.7": {
+        "type": "package",
+        "compile": {
+          "lib/net35-Client/ZedGraph.dll": {}
+        },
+        "runtime": {
+          "lib/net35-Client/ZedGraph.dll": {}
+        },
+        "resource": {
+          "lib/net35-Client/de/ZedGraph.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net35-Client/es/ZedGraph.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net35-Client/fr/ZedGraph.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net35-Client/hu/ZedGraph.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net35-Client/it/ZedGraph.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net35-Client/ja/ZedGraph.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net35-Client/pt/ZedGraph.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net35-Client/ru/ZedGraph.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net35-Client/sk/ZedGraph.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/net35-Client/sv/ZedGraph.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net35-Client/tr/ZedGraph.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net35-Client/zh-cn/ZedGraph.resources.dll": {
+            "locale": "zh-cn"
+          },
+          "lib/net35-Client/zh-tw/ZedGraph.resources.dll": {
+            "locale": "zh-tw"
+          }
+        }
+      },
+      "ZXing.Net/0.16.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/zxing.dll": {},
+          "lib/net45/zxing.presentation.dll": {}
+        },
+        "runtime": {
+          "lib/net45/zxing.dll": {},
+          "lib/net45/zxing.presentation.dll": {}
+        }
+      },
+      "QrCodeEncoding/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "EMGU.CV": "4.1.0.3420",
+          "ZXing.Net": "0.16.4"
+        },
+        "compile": {
+          "bin/placeholder/QrCodeEncoding.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/QrCodeEncoding.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win": {
+      "ControlzEx/4.0.0-alpha0303": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.0.1"
+        },
+        "compile": {
+          "lib/net45/ControlzEx.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ControlzEx.dll": {}
+        }
+      },
+      "EMGU.CV/4.1.0.3420": {
+        "type": "package",
+        "dependencies": {
+          "ZedGraph": "[5.1.7]"
+        },
+        "compile": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Fody/5.0.6": {
+        "type": "package",
+        "build": {
+          "build/Fody.targets": {}
+        }
+      },
+      "Hprose/1.5.7": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Hprose.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Hprose.dll": {}
+        }
+      },
+      "MahApps.Metro/2.0.0-alpha0391": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[4.0.0-alpha0303, 5.0.0)"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net46/MahApps.Metro.dll": {}
+        },
+        "runtime": {
+          "lib/net46/MahApps.Metro.dll": {}
+        }
+      },
+      "MahApps.Metro.IconPacks/3.0.0-alpha0186": {
+        "type": "package",
+        "compile": {
+          "lib/net46/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/net46/MahApps.Metro.IconPacks.dll": {}
+        },
+        "runtime": {
+          "lib/net46/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/net46/MahApps.Metro.IconPacks.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PropertyChanged.Fody/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "5.0.6"
+        },
+        "compile": {
+          "lib/net452/PropertyChanged.dll": {}
+        },
+        "runtime": {
+          "lib/net452/PropertyChanged.dll": {}
+        },
+        "build": {
+          "build/PropertyChanged.Fody.props": {}
+        }
+      },
+      "ZedGraph/5.1.7": {
+        "type": "package",
+        "compile": {
+          "lib/net35-Client/ZedGraph.dll": {}
+        },
+        "runtime": {
+          "lib/net35-Client/ZedGraph.dll": {}
+        },
+        "resource": {
+          "lib/net35-Client/de/ZedGraph.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net35-Client/es/ZedGraph.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net35-Client/fr/ZedGraph.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net35-Client/hu/ZedGraph.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net35-Client/it/ZedGraph.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net35-Client/ja/ZedGraph.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net35-Client/pt/ZedGraph.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net35-Client/ru/ZedGraph.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net35-Client/sk/ZedGraph.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/net35-Client/sv/ZedGraph.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net35-Client/tr/ZedGraph.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net35-Client/zh-cn/ZedGraph.resources.dll": {
+            "locale": "zh-cn"
+          },
+          "lib/net35-Client/zh-tw/ZedGraph.resources.dll": {
+            "locale": "zh-tw"
+          }
+        }
+      },
+      "ZXing.Net/0.16.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/zxing.dll": {},
+          "lib/net45/zxing.presentation.dll": {}
+        },
+        "runtime": {
+          "lib/net45/zxing.dll": {},
+          "lib/net45/zxing.presentation.dll": {}
+        }
+      },
+      "QrCodeEncoding/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "EMGU.CV": "4.1.0.3420",
+          "ZXing.Net": "0.16.4"
+        },
+        "compile": {
+          "bin/placeholder/QrCodeEncoding.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/QrCodeEncoding.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win-x64": {
+      "ControlzEx/4.0.0-alpha0303": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.0.1"
+        },
+        "compile": {
+          "lib/net45/ControlzEx.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ControlzEx.dll": {}
+        }
+      },
+      "EMGU.CV/4.1.0.3420": {
+        "type": "package",
+        "dependencies": {
+          "ZedGraph": "[5.1.7]"
+        },
+        "compile": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Fody/5.0.6": {
+        "type": "package",
+        "build": {
+          "build/Fody.targets": {}
+        }
+      },
+      "Hprose/1.5.7": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Hprose.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Hprose.dll": {}
+        }
+      },
+      "MahApps.Metro/2.0.0-alpha0391": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[4.0.0-alpha0303, 5.0.0)"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net46/MahApps.Metro.dll": {}
+        },
+        "runtime": {
+          "lib/net46/MahApps.Metro.dll": {}
+        }
+      },
+      "MahApps.Metro.IconPacks/3.0.0-alpha0186": {
+        "type": "package",
+        "compile": {
+          "lib/net46/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/net46/MahApps.Metro.IconPacks.dll": {}
+        },
+        "runtime": {
+          "lib/net46/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/net46/MahApps.Metro.IconPacks.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PropertyChanged.Fody/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "5.0.6"
+        },
+        "compile": {
+          "lib/net452/PropertyChanged.dll": {}
+        },
+        "runtime": {
+          "lib/net452/PropertyChanged.dll": {}
+        },
+        "build": {
+          "build/PropertyChanged.Fody.props": {}
+        }
+      },
+      "ZedGraph/5.1.7": {
+        "type": "package",
+        "compile": {
+          "lib/net35-Client/ZedGraph.dll": {}
+        },
+        "runtime": {
+          "lib/net35-Client/ZedGraph.dll": {}
+        },
+        "resource": {
+          "lib/net35-Client/de/ZedGraph.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net35-Client/es/ZedGraph.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net35-Client/fr/ZedGraph.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net35-Client/hu/ZedGraph.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net35-Client/it/ZedGraph.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net35-Client/ja/ZedGraph.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net35-Client/pt/ZedGraph.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net35-Client/ru/ZedGraph.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net35-Client/sk/ZedGraph.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/net35-Client/sv/ZedGraph.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net35-Client/tr/ZedGraph.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net35-Client/zh-cn/ZedGraph.resources.dll": {
+            "locale": "zh-cn"
+          },
+          "lib/net35-Client/zh-tw/ZedGraph.resources.dll": {
+            "locale": "zh-tw"
+          }
+        }
+      },
+      "ZXing.Net/0.16.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/zxing.dll": {},
+          "lib/net45/zxing.presentation.dll": {}
+        },
+        "runtime": {
+          "lib/net45/zxing.dll": {},
+          "lib/net45/zxing.presentation.dll": {}
+        }
+      },
+      "QrCodeEncoding/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "EMGU.CV": "4.1.0.3420",
+          "ZXing.Net": "0.16.4"
+        },
+        "compile": {
+          "bin/placeholder/QrCodeEncoding.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/QrCodeEncoding.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win-x86": {
+      "ControlzEx/4.0.0-alpha0303": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.0.1"
+        },
+        "compile": {
+          "lib/net45/ControlzEx.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ControlzEx.dll": {}
+        }
+      },
+      "EMGU.CV/4.1.0.3420": {
+        "type": "package",
+        "dependencies": {
+          "ZedGraph": "[5.1.7]"
+        },
+        "compile": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Fody/5.0.6": {
+        "type": "package",
+        "build": {
+          "build/Fody.targets": {}
+        }
+      },
+      "Hprose/1.5.7": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Hprose.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Hprose.dll": {}
+        }
+      },
+      "MahApps.Metro/2.0.0-alpha0391": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[4.0.0-alpha0303, 5.0.0)"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net46/MahApps.Metro.dll": {}
+        },
+        "runtime": {
+          "lib/net46/MahApps.Metro.dll": {}
+        }
+      },
+      "MahApps.Metro.IconPacks/3.0.0-alpha0186": {
+        "type": "package",
+        "compile": {
+          "lib/net46/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/net46/MahApps.Metro.IconPacks.dll": {}
+        },
+        "runtime": {
+          "lib/net46/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/net46/MahApps.Metro.IconPacks.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PropertyChanged.Fody/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "5.0.6"
+        },
+        "compile": {
+          "lib/net452/PropertyChanged.dll": {}
+        },
+        "runtime": {
+          "lib/net452/PropertyChanged.dll": {}
+        },
+        "build": {
+          "build/PropertyChanged.Fody.props": {}
+        }
+      },
+      "ZedGraph/5.1.7": {
+        "type": "package",
+        "compile": {
+          "lib/net35-Client/ZedGraph.dll": {}
+        },
+        "runtime": {
+          "lib/net35-Client/ZedGraph.dll": {}
+        },
+        "resource": {
+          "lib/net35-Client/de/ZedGraph.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net35-Client/es/ZedGraph.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net35-Client/fr/ZedGraph.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net35-Client/hu/ZedGraph.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net35-Client/it/ZedGraph.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net35-Client/ja/ZedGraph.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net35-Client/pt/ZedGraph.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net35-Client/ru/ZedGraph.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net35-Client/sk/ZedGraph.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/net35-Client/sv/ZedGraph.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net35-Client/tr/ZedGraph.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net35-Client/zh-cn/ZedGraph.resources.dll": {
+            "locale": "zh-cn"
+          },
+          "lib/net35-Client/zh-tw/ZedGraph.resources.dll": {
+            "locale": "zh-tw"
+          }
+        }
+      },
+      "ZXing.Net/0.16.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/zxing.dll": {},
+          "lib/net45/zxing.presentation.dll": {}
+        },
+        "runtime": {
+          "lib/net45/zxing.dll": {},
+          "lib/net45/zxing.presentation.dll": {}
+        }
+      },
+      "QrCodeEncoding/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "EMGU.CV": "4.1.0.3420",
+          "ZXing.Net": "0.16.4"
+        },
+        "compile": {
+          "bin/placeholder/QrCodeEncoding.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/QrCodeEncoding.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ControlzEx/4.0.0-alpha0303": {
+      "sha512": "P55haVL8a3E9MFDtqLokB85m7Mr4KiON4asb8TdxYaVnDsxMHmMvlQEUKX0C1Cphst3GFDAbERb/q7+PP4IDOA==",
+      "type": "package",
+      "path": "controlzex/4.0.0-alpha0303",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "controlzex.4.0.0-alpha0303.nupkg.sha512",
+        "controlzex.nuspec",
+        "lib/net45/ControlzEx.dll",
+        "lib/net45/ControlzEx.pdb",
+        "lib/net45/ControlzEx.xml",
+        "lib/net462/ControlzEx.dll",
+        "lib/net462/ControlzEx.pdb",
+        "lib/net462/ControlzEx.xml",
+        "lib/netcoreapp3.0/ControlzEx.dll",
+        "lib/netcoreapp3.0/ControlzEx.pdb",
+        "lib/netcoreapp3.0/ControlzEx.xml"
+      ]
+    },
+    "EMGU.CV/4.1.0.3420": {
+      "sha512": "xfPeylkBxyljYrycj4exs+ptfSwM3Q53smtiD6jxHVhLg3sqaorTwh/ojz+d3CgaAwkFjwjOXT1fkqnJwif+cA==",
+      "type": "package",
+      "path": "emgu.cv/4.1.0.3420",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Emgu.CV.License.txt",
+        "build/EMGU.CV.targets",
+        "build/x64/concrt140.dll",
+        "build/x64/cvextern.dll",
+        "build/x64/msvcp140.dll",
+        "build/x64/opencv_ffmpeg410_64.dll",
+        "build/x64/vcruntime140.dll",
+        "build/x86/concrt140.dll",
+        "build/x86/cvextern.dll",
+        "build/x86/msvcp140.dll",
+        "build/x86/opencv_ffmpeg410.dll",
+        "build/x86/vcruntime140.dll",
+        "emgu.cv.4.1.0.3420.nupkg.sha512",
+        "emgu.cv.nuspec",
+        "lib/net35/Emgu.CV.UI.XML",
+        "lib/net35/Emgu.CV.UI.dll",
+        "lib/net35/Emgu.CV.World.dll",
+        "lib/net35/Emgu.CV.World.xml"
+      ]
+    },
+    "Fody/5.0.6": {
+      "sha512": "BO5/h7Xnee91hNzt+oAuNvQiMdf/eTgYuiNP0SokcwjaD2MUrW6d5BjWqH2ukwzJDfbyo1Q8UJBbwlC/Ax2GaA==",
+      "type": "package",
+      "path": "fody/5.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Fody.targets",
+        "fody.5.0.6.nupkg.sha512",
+        "fody.nuspec",
+        "netclassictask/Fody.dll",
+        "netclassictask/FodyCommon.dll",
+        "netclassictask/FodyHelpers.dll",
+        "netclassictask/FodyIsolated.dll",
+        "netclassictask/Mono.Cecil.Pdb.dll",
+        "netclassictask/Mono.Cecil.Pdb.pdb",
+        "netclassictask/Mono.Cecil.Rocks.dll",
+        "netclassictask/Mono.Cecil.Rocks.pdb",
+        "netclassictask/Mono.Cecil.dll",
+        "netclassictask/Mono.Cecil.pdb",
+        "netstandardtask/Fody.dll",
+        "netstandardtask/FodyCommon.dll",
+        "netstandardtask/FodyHelpers.dll",
+        "netstandardtask/FodyIsolated.dll",
+        "netstandardtask/Mono.Cecil.Pdb.dll",
+        "netstandardtask/Mono.Cecil.Pdb.pdb",
+        "netstandardtask/Mono.Cecil.Rocks.dll",
+        "netstandardtask/Mono.Cecil.Rocks.pdb",
+        "netstandardtask/Mono.Cecil.dll",
+        "netstandardtask/Mono.Cecil.pdb"
+      ]
+    },
+    "Hprose/1.5.7": {
+      "sha512": "8WCe7rSS85yqqIgh81JyIqcBGcG5wJu8VM6LKIeeiUb9E0LQSKTJqXu66u3xrBjQS6PR+sqhkEd+lVexf8UGCA==",
+      "type": "package",
+      "path": "hprose/1.5.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hprose.1.5.7.nupkg.sha512",
+        "hprose.nuspec",
+        "lib/monoandroid/Hprose.dll",
+        "lib/monotouch/Hprose.dll",
+        "lib/net10-cf/Hprose.dll",
+        "lib/net10/Hprose.dll",
+        "lib/net11/Hprose.dll",
+        "lib/net20-cf/Hprose.dll",
+        "lib/net20/Hprose.dll",
+        "lib/net35-cf/Hprose.dll",
+        "lib/net35-client/Hprose.dll",
+        "lib/net35/Hprose.dll",
+        "lib/net39-cf/Hprose.dll",
+        "lib/net40-client/Hprose.dll",
+        "lib/net40/Hprose.dll",
+        "lib/net45/Hprose.dll",
+        "lib/net451/Hprose.dll",
+        "lib/net452/Hprose.dll",
+        "lib/net46/Hprose.dll",
+        "lib/net461/Hprose.dll",
+        "lib/netmf/Hprose.dll",
+        "lib/xamarinios/Hprose.dll",
+        "lib/xamarintvos/Hprose.dll",
+        "lib/xamarinwatchos/Hprose.dll"
+      ]
+    },
+    "MahApps.Metro/2.0.0-alpha0391": {
+      "sha512": "MdyNUphMGaIw14dkl/1SQFDVu0hT6tceG26PALwo7e2Oj4mHPgpXonaVcy2sb64BwXUW/mD4KAv/qbiY+wbQiw==",
+      "type": "package",
+      "path": "mahapps.metro/2.0.0-alpha0391",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MahApps.Metro.dll",
+        "lib/net45/MahApps.Metro.pdb",
+        "lib/net45/MahApps.Metro.xml",
+        "lib/net46/MahApps.Metro.dll",
+        "lib/net46/MahApps.Metro.pdb",
+        "lib/net46/MahApps.Metro.xml",
+        "lib/net47/MahApps.Metro.dll",
+        "lib/net47/MahApps.Metro.pdb",
+        "lib/net47/MahApps.Metro.xml",
+        "lib/netcoreapp3.0/MahApps.Metro.dll",
+        "lib/netcoreapp3.0/MahApps.Metro.pdb",
+        "lib/netcoreapp3.0/MahApps.Metro.xml",
+        "mahapps.metro.2.0.0-alpha0391.nupkg.sha512",
+        "mahapps.metro.nuspec"
+      ]
+    },
+    "MahApps.Metro.IconPacks/3.0.0-alpha0186": {
+      "sha512": "u+q0WbOrNBXhagOxn3igTOcxCQEVKUwgQlfv0wCg7FTgAluzxSdbnice8EWtXaG1asXePNCJBNe2t//llq0lcQ==",
+      "type": "package",
+      "path": "mahapps.metro.iconpacks/3.0.0-alpha0186",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MahApps.Metro.IconPacks.Core.dll",
+        "lib/net45/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/net45/MahApps.Metro.IconPacks.Core.xml",
+        "lib/net45/MahApps.Metro.IconPacks.dll",
+        "lib/net45/MahApps.Metro.IconPacks.pdb",
+        "lib/net45/MahApps.Metro.IconPacks.xml",
+        "lib/net46/MahApps.Metro.IconPacks.Core.dll",
+        "lib/net46/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/net46/MahApps.Metro.IconPacks.Core.xml",
+        "lib/net46/MahApps.Metro.IconPacks.dll",
+        "lib/net46/MahApps.Metro.IconPacks.pdb",
+        "lib/net46/MahApps.Metro.IconPacks.xml",
+        "lib/net47/MahApps.Metro.IconPacks.Core.dll",
+        "lib/net47/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/net47/MahApps.Metro.IconPacks.Core.xml",
+        "lib/net47/MahApps.Metro.IconPacks.dll",
+        "lib/net47/MahApps.Metro.IconPacks.pdb",
+        "lib/net47/MahApps.Metro.IconPacks.xml",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Core.dll",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Core.xml",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.dll",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.pdb",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.xml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.pri",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.xml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core/Converter/Converters.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core/MahApps.Metro.IconPacks.Core.xr.xml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.dll",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.pdb",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.pri",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.xml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/MahApps.Metro.IconPacks.xr.xml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/Generic.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/IconPacks.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconEntypo.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconFeatherIcons.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconFontAwesome.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconIonicons.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconJamIcons.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconMaterial.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconMaterialDesign.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconMaterialLight.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconModern.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconOcticons.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconSimpleIcons.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconTypicons.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconUnicons.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconWeatherIcons.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks/Themes/PackIconZondicons.xaml",
+        "mahapps.metro.iconpacks.3.0.0-alpha0186.nupkg.sha512",
+        "mahapps.metro.iconpacks.nuspec"
+      ]
+    },
+    "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
+      "sha512": "ZFmmeTIbRP5a5J47lIUeO6WgFdrU+d2NBPSv1BgsQFVdUK9jgIKs0zOnt6RJDOlSvrvlGWzhv0LgNZfXGz9nEA==",
+      "type": "package",
+      "path": "microsoft.xaml.behaviors.wpf/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.Xaml.Behaviors.dll",
+        "lib/net45/Microsoft.Xaml.Behaviors.xml",
+        "microsoft.xaml.behaviors.wpf.1.0.1.nupkg.sha512",
+        "microsoft.xaml.behaviors.wpf.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "PropertyChanged.Fody/3.0.1": {
+      "sha512": "k6ds4qRFDzQ7uHTMG2Xq/veHpO7fSPobsulsi2CuWPAX3XWsseCUPh2TaDb4f1YN6gld+UGCaSBjpFc1jpljwA==",
+      "type": "package",
+      "path": "propertychanged.fody/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/PropertyChanged.Fody.props",
+        "lib/net452/PropertyChanged.dll",
+        "lib/net452/PropertyChanged.xml",
+        "lib/netstandard1.0/PropertyChanged.dll",
+        "lib/netstandard1.0/PropertyChanged.xml",
+        "propertychanged.fody.3.0.1.nupkg.sha512",
+        "propertychanged.fody.nuspec",
+        "weaver/PropertyChanged.Fody.dll",
+        "weaver/PropertyChanged.Fody.xcf"
+      ]
+    },
+    "ZedGraph/5.1.7": {
+      "sha512": "TcZaInxUjYMJDWIaYvs/CgpssfVJQMqiry8GPP70klyheP4tYSQXFWi5HYwJvqao+epeUu3bsk3yDb3Nf/hVWw==",
+      "type": "package",
+      "path": "zedgraph/5.1.7",
+      "files": [
+        ".nupkg.metadata",
+        "content/License-LGPL.txt",
+        "lib/net35-Client/ZedGraph.XML",
+        "lib/net35-Client/ZedGraph.dll",
+        "lib/net35-Client/de/ZedGraph.resources.dll",
+        "lib/net35-Client/es/ZedGraph.resources.dll",
+        "lib/net35-Client/fr/ZedGraph.resources.dll",
+        "lib/net35-Client/hu/ZedGraph.resources.dll",
+        "lib/net35-Client/it/ZedGraph.resources.dll",
+        "lib/net35-Client/ja/ZedGraph.resources.dll",
+        "lib/net35-Client/pt/ZedGraph.resources.dll",
+        "lib/net35-Client/ru/ZedGraph.resources.dll",
+        "lib/net35-Client/sk/ZedGraph.resources.dll",
+        "lib/net35-Client/sv/ZedGraph.resources.dll",
+        "lib/net35-Client/tr/ZedGraph.resources.dll",
+        "lib/net35-Client/zh-cn/ZedGraph.resources.dll",
+        "lib/net35-Client/zh-tw/ZedGraph.resources.dll",
+        "zedgraph.5.1.7.nupkg.sha512",
+        "zedgraph.nuspec"
+      ]
+    },
+    "ZXing.Net/0.16.4": {
+      "sha512": "9Qaq+ovAlJ5SL+1HiIzNXOLObj0iCPAytDtsa7QVSn7qx/CspfnlnleGYLeCiESTHBwW1ERxI1MBc2veFsK1sg==",
+      "type": "package",
+      "path": "zxing.net/0.16.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/zxing.monoandroid.dll",
+        "lib/MonoAndroid/zxing.monoandroid.pdb",
+        "lib/MonoAndroid/zxing.monoandroid.xml",
+        "lib/native/zxing.XML",
+        "lib/native/zxing.pdb",
+        "lib/native/zxing.pri",
+        "lib/native/zxing.winmd",
+        "lib/net20-cf/zxing.ce2.0.dll",
+        "lib/net20-cf/zxing.ce2.0.pdb",
+        "lib/net20-cf/zxing.ce2.0.xml",
+        "lib/net20/zxing.XML",
+        "lib/net20/zxing.dll",
+        "lib/net20/zxing.pdb",
+        "lib/net35-cf/zxing.ce3.5.dll",
+        "lib/net35-cf/zxing.ce3.5.pdb",
+        "lib/net35-cf/zxing.ce3.5.xml",
+        "lib/net35/zxing.XML",
+        "lib/net35/zxing.dll",
+        "lib/net35/zxing.pdb",
+        "lib/net40/zxing.XML",
+        "lib/net40/zxing.dll",
+        "lib/net40/zxing.pdb",
+        "lib/net40/zxing.presentation.XML",
+        "lib/net40/zxing.presentation.dll",
+        "lib/net40/zxing.presentation.pdb",
+        "lib/net45/zxing.XML",
+        "lib/net45/zxing.dll",
+        "lib/net45/zxing.pdb",
+        "lib/net45/zxing.presentation.XML",
+        "lib/net45/zxing.presentation.dll",
+        "lib/net45/zxing.presentation.pdb",
+        "lib/net461/zxing.XML",
+        "lib/net461/zxing.dll",
+        "lib/net461/zxing.pdb",
+        "lib/net461/zxing.presentation.XML",
+        "lib/net461/zxing.presentation.dll",
+        "lib/net461/zxing.presentation.pdb",
+        "lib/net47/zxing.XML",
+        "lib/net47/zxing.dll",
+        "lib/net47/zxing.pdb",
+        "lib/net47/zxing.presentation.XML",
+        "lib/net47/zxing.presentation.dll",
+        "lib/net47/zxing.presentation.pdb",
+        "lib/netstandard1.0/zxing.dll",
+        "lib/netstandard1.0/zxing.pdb",
+        "lib/netstandard1.0/zxing.xml",
+        "lib/netstandard1.1/zxing.dll",
+        "lib/netstandard1.1/zxing.pdb",
+        "lib/netstandard1.1/zxing.xml",
+        "lib/netstandard1.3/zxing.dll",
+        "lib/netstandard1.3/zxing.pdb",
+        "lib/netstandard1.3/zxing.xml",
+        "lib/netstandard2.0/zxing.dll",
+        "lib/netstandard2.0/zxing.pdb",
+        "lib/netstandard2.0/zxing.xml",
+        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.XML",
+        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.dll",
+        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.pdb",
+        "lib/sl3-wp/zxing.wp7.0.XML",
+        "lib/sl3-wp/zxing.wp7.0.dll",
+        "lib/sl3-wp/zxing.wp7.0.pdb",
+        "lib/sl4-wp71/zxing.wp7.1.XML",
+        "lib/sl4-wp71/zxing.wp7.1.dll",
+        "lib/sl4-wp71/zxing.wp7.1.pdb",
+        "lib/sl4/zxing.sl4.XML",
+        "lib/sl4/zxing.sl4.dll",
+        "lib/sl4/zxing.sl4.pdb",
+        "lib/sl5/zxing.sl5.XML",
+        "lib/sl5/zxing.sl5.dll",
+        "lib/sl5/zxing.sl5.pdb",
+        "lib/uap10/zxing.dll",
+        "lib/uap10/zxing.pdb",
+        "lib/uap10/zxing.pri",
+        "lib/uap10/zxing.xml",
+        "lib/windows8-managed/zxing.winrt.XML",
+        "lib/windows8-managed/zxing.winrt.dll",
+        "lib/windows8-managed/zxing.winrt.pdb",
+        "lib/windows8/zxing.XML",
+        "lib/windows8/zxing.pdb",
+        "lib/windows8/zxing.pri",
+        "lib/windows8/zxing.winmd",
+        "lib/wp8/zxing.wp8.0.XML",
+        "lib/wp8/zxing.wp8.0.dll",
+        "lib/wp8/zxing.wp8.0.pdb",
+        "zxing.net.0.16.4.nupkg.sha512",
+        "zxing.net.nuspec"
+      ]
+    },
+    "QrCodeEncoding/1.0.0": {
+      "type": "project",
+      "path": "../Gma.QrCodeNet.Encoder/QrCodeEncoding.csproj",
+      "msbuildProject": "../Gma.QrCodeNet.Encoder/QrCodeEncoding.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6": [
+      "Hprose >= 1.5.7",
+      "MahApps.Metro >= 2.0.0-alpha0391",
+      "MahApps.Metro.IconPacks >= 3.0.0-alpha0186",
+      "Newtonsoft.Json >= 12.0.2",
+      "PropertyChanged.Fody >= 3.0.1",
+      "QrCodeEncoding >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\q4528\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\QrCodeServer\\QrCodeServer.csproj",
+      "projectName": "QrCodeServer",
+      "projectPath": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\QrCodeServer\\QrCodeServer.csproj",
+      "packagesPath": "C:\\Users\\q4528\\.nuget\\packages\\",
+      "outputPath": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\QrCodeServer\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\q4528\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net46"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net46": {
+          "projectReferences": {
+            "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\Gma.QrCodeNet.Encoder\\QrCodeEncoding.csproj": {
+              "projectPath": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\Gma.QrCodeNet.Encoder\\QrCodeEncoding.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net46": {
+        "dependencies": {
+          "Hprose": {
+            "target": "Package",
+            "version": "[1.5.7, )"
+          },
+          "MahApps.Metro": {
+            "target": "Package",
+            "version": "[2.0.0-alpha0391, )"
+          },
+          "MahApps.Metro.IconPacks": {
+            "target": "Package",
+            "version": "[3.0.0-alpha0186, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.2, )"
+          },
+          "PropertyChanged.Fody": {
+            "target": "Package",
+            "version": "[3.0.1, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

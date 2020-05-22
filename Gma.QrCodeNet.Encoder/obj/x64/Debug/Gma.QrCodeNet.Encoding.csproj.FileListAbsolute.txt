@@ -1,0 +1,11 @@
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\bin\x64\Debug\Gma.QrCodeNet.Encoding.dll
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\bin\x64\Debug\Gma.QrCodeNet.Encoding.pdb
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\obj\x64\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\obj\x64\Debug\Gma.QrCodeNet.Encoding_MarkupCompile.cache
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\obj\x64\Debug\Gma.QrCodeNet.Encoding_MarkupCompile.lref
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\obj\x64\Debug\themes\Generic.baml
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\obj\x64\Debug\Gma.QrCodeNet.Encoding.g.resources
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\obj\x64\Debug\Gma.QrCodeNet.Encoding.csproj.CoreCompileInputs.cache
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\obj\x64\Debug\Gma.QrCodeNet.Encoding.dll
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\obj\x64\Debug\Gma.QrCodeNet.Encoding.pdb
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\obj\x64\Debug\Gma.QrCodeNet.Encoding.csprojAssemblyReference.cache

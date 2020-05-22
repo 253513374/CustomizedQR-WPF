@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\Gma.QrCodeNet.Encoder\\QrCodeEncoding.csproj": {}
+  },
+  "projects": {
+    "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\Gma.QrCodeNet.Encoder\\QrCodeEncoding.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\Gma.QrCodeNet.Encoder\\QrCodeEncoding.csproj",
+        "projectName": "QrCodeEncoding",
+        "projectPath": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\Gma.QrCodeNet.Encoder\\QrCodeEncoding.csproj",
+        "packagesPath": "C:\\Users\\q4528\\.nuget\\packages\\",
+        "outputPath": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\Gma.QrCodeNet.Encoder\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\q4528\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "dependencies": {
+            "EMGU.CV": {
+              "target": "Package",
+              "version": "[4.1.0.3420, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

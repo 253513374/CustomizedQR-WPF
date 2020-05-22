@@ -1,0 +1,17 @@
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\nuget\lib\net40\x64\concrt140.dll
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\nuget\lib\net40\x64\cvextern.dll
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\nuget\lib\net40\x64\msvcp140.dll
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\nuget\lib\net40\x64\opencv_ffmpeg410_64.dll
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\nuget\lib\net40\x64\vcruntime140.dll
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\nuget\lib\net40\x86\concrt140.dll
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\nuget\lib\net40\x86\cvextern.dll
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\nuget\lib\net40\x86\msvcp140.dll
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\nuget\lib\net40\x86\opencv_ffmpeg410.dll
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\nuget\lib\net40\x86\vcruntime140.dll
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\nuget\lib\net40\QrCodeEncoding.xml
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\nuget\lib\net40\QrCodeEncoding.dll
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\nuget\lib\net40\QrCodeEncoding.pdb
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\obj\Release\QrCodeEncoding.csprojAssemblyReference.cache
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\obj\Release\QrCodeEncoding.csproj.CopyComplete
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\obj\Release\QrCodeEncoding.dll
+F:\Visual Studio 2015\QrCodeTools\QrCodeDIY\Gma.QrCodeNet.Encoder\obj\Release\QrCodeEncoding.pdb

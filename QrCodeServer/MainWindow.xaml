@@ -1,0 +1,269 @@
+﻿<Control:MetroWindow x:Class="QrCodeServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Control ="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:QrCodeServer"
+        mc:Ignorable="d"
+        Title="QrCode  Tcp and Http Servers" Height="650" Width="850" Loaded="MetroWindow_Loaded"
+                     >
+    <Control:MetroWindow.Resources>
+        <Thickness x:Key="ControlMargin">0 5 0 0</Thickness>
+    </Control:MetroWindow.Resources>
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+            <ColumnDefinition Width="100*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="230"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <TabControl Grid.Column="0"  Margin="15,10,15,0"  DataContext="{Binding ServerUri}">
+            <TabItem Header="TCP服务">
+                <Grid>
+                    <StackPanel>
+                        <Label Content="服务器IP:" 
+                   VerticalAlignment="Center" 
+                   Margin="{StaticResource ControlMargin}"/>
+
+                        <TextBox   Text="{Binding ServerIP, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                       x:Name="txbServerIP"
+                       VerticalAlignment="Stretch"
+                       HorizontalAlignment="Left"  
+                       
+                       Width="185"/>
+
+                        <Label Content="端口:"
+                   Margin="{StaticResource ControlMargin}"
+                   VerticalAlignment="Center" />
+                        <TextBox 
+                     x:Name="Serverprot" 
+                     Text="{Binding ServerProt}"
+                     VerticalAlignment="Stretch"
+                     HorizontalAlignment="Left"  
+                     Width="65"  />
+
+                        <Separator HorizontalAlignment="Stretch" Margin="{StaticResource ControlMargin}" ></Separator>
+                        <WrapPanel  VerticalAlignment="Bottom" 
+                        HorizontalAlignment="Stretch"
+                        Margin="{StaticResource ControlMargin}">
+
+                            <Button Content="启动TCP服务" 
+                         
+                        Height="30"
+                        Click="StartTcpButton_Click" 
+                        x:Name="StarTcptButton"  />
+
+                            <Separator Width="65" Visibility="Hidden"/>
+
+                            <Button Content="关闭Tcp服务"  
+                        Height="30"
+                        x:Name="StopTcpButton" 
+                        Click="StopTcpButton_Click"   
+                          />
+                        </WrapPanel>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="HTTP服务">
+                <Grid>
+                    <StackPanel>
+                        <Label Content="服务器IP:" 
+                   VerticalAlignment="Center" 
+                   Margin="{StaticResource ControlMargin}"/>
+
+                        <TextBox   Text="{Binding ServerIP, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+
+                       VerticalAlignment="Stretch"
+                       HorizontalAlignment="Left"  
+                       
+                       Width="185"/>
+
+                        <Label Content="端口:"
+                   Margin="{StaticResource ControlMargin}"
+                   VerticalAlignment="Center" />
+                        <TextBox 
+
+                     Text="{Binding ServerHttpProt}"
+                     VerticalAlignment="Stretch"
+                     HorizontalAlignment="Left"  
+                     Width="65"  />
+
+                        <Separator HorizontalAlignment="Stretch" Margin="{StaticResource ControlMargin}" ></Separator>
+                        <WrapPanel  VerticalAlignment="Bottom" 
+                        HorizontalAlignment="Stretch"
+                        Margin="{StaticResource ControlMargin}">
+
+                            <Button Content="启动Http服务" 
+                         
+                        Height="30"
+                        Click="StartHttpButton_Click" 
+                        x:Name="StartHttpButton"  />
+
+                            <Separator Width="65" Visibility="Hidden"/>
+
+                            <Button Content="关闭Http服务"  
+                        Height="30"
+                        x:Name="StopHttpButton" 
+                        Click="StopHttpButton_Click"   
+                          />
+                        </WrapPanel>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="测试" Visibility="Hidden">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                    <Button Name="TCP" Content="TCP测试" 
+                            Click="TCP_Click"
+                            ></Button>
+                    <Separator Margin="10"></Separator>
+                    <Button Name="Http" Content="Http测试"
+                            Click="Http_Click"
+                            ></Button>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+
+        <ListBox Grid.Row="1" 
+                 Grid.Column="0" 
+                
+                 VerticalAlignment="Stretch"
+                 HorizontalAlignment="Stretch"
+                 x:Name="ListBoxServerMsg"
+                 Margin="15,0,15,0"
+                 FontSize="16"
+                    >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Width="{Binding}"
+                        TextWrapping="Wrap"
+                        Text="{Binding}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+            <!---->
+            
+          
+        </ListBox>
+        
+        <ScrollViewer  Grid.Column="1" Grid.Row="0"
+                     Grid.RowSpan="2" 
+                     HorizontalAlignment="Stretch"  
+                     VerticalAlignment="Stretch" 
+                     Margin="10"
+                     >
+            <!--<TextBlock  Margin="{StaticResource ControlMargin}"
+                        FontSize="16"
+                        TextWrapping="Wrap"
+                        Name="MsgText"
+                        Text="说明文档"
+                       />-->
+            <Border  Margin="5"
+             BorderThickness="1" CornerRadius="15" >
+
+                <!--<RichTextBox Name="DocumentBox" >
+                    
+                    
+                </RichTextBox>-->
+            <RichTextBox   Name="DocumentBox" 
+                          BorderThickness="0"
+                             Margin="{StaticResource ControlMargin}"
+                             Padding="5"
+                             IsDocumentEnabled="True"
+                             IsReadOnly="True">
+                <FlowDocument FontSize="14">
+                        <Paragraph>
+                            <Hyperlink >
+                                <Run Text="API 使用说明文档" FontSize="26" />
+                            </Hyperlink>
+                            <LineBreak />
+                        </Paragraph>
+                        <Paragraph>
+                            <Hyperlink >
+                                <Run Text="地址配置" FontSize="18" />
+                            </Hyperlink>
+                            <LineBreak />
+                            <Run>服务器IP： 本机IP</Run>
+                            <LineBreak />
+                            <Run>端口：Tcp与Http  不能使用同一个端口</Run>
+                        </Paragraph>
+
+                        <Paragraph FontSize="14">
+                            <Hyperlink >
+                                <Run Text="开放API" FontSize="18" />
+                            </Hyperlink>
+                            <LineBreak />
+                            <Run>1、string Expjson()</Run>
+                            <LineBreak />
+                            <Run>2、Byte[] Encoder(string json)</Run>
+                            <LineBreak />
+                            <Run>说明：string Expjson() 返回JSON格式的参数属性，可直接使用这个返回的参数进行二维码生成</Run>
+                            <LineBreak />
+                            <Run>说明：Byte[] Encoder(string json) 根据传入的json参数生成二维码</Run>
+                            <LineBreak />
+                            <Run>json：生成二维码需要的Json字符串参数，具体参照说明</Run>
+                            <LineBreak />
+                            <Run>Byte[]：返回的二维码图像数据字节数组</Run>
+                        </Paragraph>
+
+                        <Paragraph>
+                            <Hyperlink >
+                                <Run Text="Json参数" FontSize="18" />
+                            </Hyperlink>
+                            <LineBreak />
+                            <Run >{"LogoImgPath":"",
+                                "QrCodeTypeEnum" =1，
+                                "IsTopLogoImg":false,
+                                "DpiInch":96,
+                                "QrCodeWidthMM":200,
+                                "QuietZoneModule":1,
+                                "ErrorCorrectionLevel":3,
+                                "QrText":"https://www.hao123.com",
+                                "IsTypeSize":true,
+                                "IsQrCodeAutoSize":true,
+                                "QrCodePixelWidth":600}</Run>
+                        </Paragraph>
+                    
+                        <Paragraph>
+                            <Hyperlink >
+                                <Run Text="json参数文档说明" FontSize="18" />
+                            </Hyperlink>
+                            <LineBreak />
+                            <Run> LogoImgPath: "" ，logo图像物理路径  </Run>
+                            <LineBreak />
+                            <Run>QrCodeTypeEnum:1 ，二维码类型 1 or 2，默认1 表示点阵，2 表示方块</Run>
+                            <LineBreak />
+                            <Run> IsTopLogoImg: False ，是否需要LOGO平铺，设置为turn为平铺      </Run>
+                            <LineBreak />
+                            <Run> DpiInch: 96 ，DPI分辨率                                   </Run>
+                            <LineBreak />
+                            <Run> QrCodeWidthMM: 200 ，以毫米为长度单位生成二维码尺寸                                 </Run>
+                            <LineBreak />
+                            <Run> QuietZoneModule: 1  ，二维码边框留白数量 </Run>
+                            <LineBreak />
+                            <Run> ErrorCorrectionLevel: 3  ，二维码纠错等级   </Run>
+                            <LineBreak />
+                            <Run>QrText: "www.baidu.com" ，二维码生成内容</Run>
+                            <LineBreak />
+                            <Run>IsTypeSize: True, 指示像素Or毫米为二维码单位，默认true 表示像素，否则为毫米</Run>
+                            <LineBreak />
+                            <Run>IsQrCodeAutoSize: True,自动设置二维码大小（像素），默认值trun(开启),false关闭，启用这个值则忽略其他二维码尺寸设置</Run>
+                            <LineBreak />
+                            <Run>QrCodePixelWidth: 600 ，以像素为单位设置二维码大小</Run>
+                            <LineBreak />
+                        </Paragraph>
+                    
+                      
+                    </FlowDocument>
+            </RichTextBox>
+
+            </Border>
+        </ScrollViewer>
+    </Grid>
+</Control:MetroWindow>

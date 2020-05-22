@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\QrCodeServer\\QrCodeServer.csproj": {}
+  },
+  "projects": {
+    "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\Gma.QrCodeNet.Encoder\\QrCodeEncoding.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\Gma.QrCodeNet.Encoder\\QrCodeEncoding.csproj",
+        "projectName": "QrCodeEncoding",
+        "projectPath": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\Gma.QrCodeNet.Encoder\\QrCodeEncoding.csproj",
+        "packagesPath": "C:\\Users\\q4528\\.nuget\\packages\\",
+        "outputPath": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\Gma.QrCodeNet.Encoder\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\q4528\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "dependencies": {
+            "EMGU.CV": {
+              "target": "Package",
+              "version": "[4.1.0.3420, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\QrCodeServer\\QrCodeServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\QrCodeServer\\QrCodeServer.csproj",
+        "projectName": "QrCodeServer",
+        "projectPath": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\QrCodeServer\\QrCodeServer.csproj",
+        "packagesPath": "C:\\Users\\q4528\\.nuget\\packages\\",
+        "outputPath": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\QrCodeServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\q4528\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {
+              "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\Gma.QrCodeNet.Encoder\\QrCodeEncoding.csproj": {
+                "projectPath": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\Gma.QrCodeNet.Encoder\\QrCodeEncoding.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "dependencies": {
+            "Hprose": {
+              "target": "Package",
+              "version": "[1.5.7, )"
+            },
+            "MahApps.Metro": {
+              "target": "Package",
+              "version": "[2.0.0-alpha0391, )"
+            },
+            "MahApps.Metro.IconPacks": {
+              "target": "Package",
+              "version": "[3.0.0-alpha0186, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

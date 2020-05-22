@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "T1Ftv7XyZXP79mmbCVZP9wx9gwQXMfhb/i+bel5GYLC322Fg86WksXGxB6tMGIwGiT0eef2zH87x8hMXhLaAZw==",
+  "success": true,
+  "projectFilePath": "F:\\Visual Studio 2015\\QrCodeTools\\QrCodeDIY\\CustomizedQR-WPF\\Gma.QrCodeNet.Encoder\\QrCodeEncoding.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\q4528\\.nuget\\packages\\emgu.cv\\4.1.0.3420\\emgu.cv.4.1.0.3420.nupkg.sha512",
+    "C:\\Users\\q4528\\.nuget\\packages\\zedgraph\\5.1.7\\zedgraph.5.1.7.nupkg.sha512",
+    "C:\\Users\\q4528\\.nuget\\packages\\zxing.net\\0.16.4\\zxing.net.0.16.4.nupkg.sha512"
+  ],
+  "logs": []
+}

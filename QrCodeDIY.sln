@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrCodeTools", "QrCodeTools\QrCodeTools.csproj", "{99AA0ACA-9A14-41F0-B77E-966F32A5933B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AA3FD0C4-5577-4327-8486-AA4F5903DB9B} = {AA3FD0C4-5577-4327-8486-AA4F5903DB9B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrCodeEncoding", "Gma.QrCodeNet.Encoder\QrCodeEncoding.csproj", "{AA3FD0C4-5577-4327-8486-AA4F5903DB9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrCodeServer", "QrCodeServer\QrCodeServer.csproj", "{4F370EAC-A18C-45A5-AB72-33C1BB94B6DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99AA0ACA-9A14-41F0-B77E-966F32A5933B}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{99AA0ACA-9A14-41F0-B77E-966F32A5933B}.Debug|Any CPU.Build.0 = Debug|x86
+		{99AA0ACA-9A14-41F0-B77E-966F32A5933B}.Debug|x64.ActiveCfg = Debug|x86
+		{99AA0ACA-9A14-41F0-B77E-966F32A5933B}.Debug|x64.Build.0 = Debug|x86
+		{99AA0ACA-9A14-41F0-B77E-966F32A5933B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99AA0ACA-9A14-41F0-B77E-966F32A5933B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99AA0ACA-9A14-41F0-B77E-966F32A5933B}.Release|x64.ActiveCfg = Release|Any CPU
+		{99AA0ACA-9A14-41F0-B77E-966F32A5933B}.Release|x64.Build.0 = Release|Any CPU
+		{AA3FD0C4-5577-4327-8486-AA4F5903DB9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3FD0C4-5577-4327-8486-AA4F5903DB9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3FD0C4-5577-4327-8486-AA4F5903DB9B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AA3FD0C4-5577-4327-8486-AA4F5903DB9B}.Debug|x64.Build.0 = Debug|Any CPU
+		{AA3FD0C4-5577-4327-8486-AA4F5903DB9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3FD0C4-5577-4327-8486-AA4F5903DB9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3FD0C4-5577-4327-8486-AA4F5903DB9B}.Release|x64.ActiveCfg = Release|Any CPU
+		{AA3FD0C4-5577-4327-8486-AA4F5903DB9B}.Release|x64.Build.0 = Release|Any CPU
+		{4F370EAC-A18C-45A5-AB72-33C1BB94B6DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F370EAC-A18C-45A5-AB72-33C1BB94B6DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F370EAC-A18C-45A5-AB72-33C1BB94B6DE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4F370EAC-A18C-45A5-AB72-33C1BB94B6DE}.Debug|x64.Build.0 = Debug|Any CPU
+		{4F370EAC-A18C-45A5-AB72-33C1BB94B6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F370EAC-A18C-45A5-AB72-33C1BB94B6DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F370EAC-A18C-45A5-AB72-33C1BB94B6DE}.Release|x64.ActiveCfg = Release|Any CPU
+		{4F370EAC-A18C-45A5-AB72-33C1BB94B6DE}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {357914C1-5571-4CB8-804E-59AFF7C5BDD1}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/qinxishi
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = QrCodeTools\\QrCodeTools.csproj
+		SccProjectName1 = QrCodeTools
+		SccLocalPath1 = QrCodeTools
+		SccProjectUniqueName2 = QrCodeServer\\QrCodeServer.csproj
+		SccProjectName2 = QrCodeServer
+		SccLocalPath2 = QrCodeServer
+		SccProjectUniqueName3 = Gma.QrCodeNet.Encoder\\QrCodeEncoding.csproj
+		SccProjectName3 = Gma.QrCodeNet.Encoder
+		SccLocalPath3 = Gma.QrCodeNet.Encoder
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+F:\Visual Studio 2015\DIYQrCode\nuget\lib\net40\Gma.QrCodeNet.Encoding.XML
+F:\Visual Studio 2015\DIYQrCode\nuget\lib\net40\Gma.QrCodeNet.Encoding.dll
+F:\Visual Studio 2015\DIYQrCode\nuget\lib\net40\Gma.QrCodeNet.Encoding.pdb
+F:\Visual Studio 2015\DIYQrCode\Gma.QrCodeNet.Encoder\obj\Release\GeneratedInternalTypeHelper.g.cs
+F:\Visual Studio 2015\DIYQrCode\Gma.QrCodeNet.Encoder\obj\Release\Gma.QrCodeNet.Encoding_MarkupCompile.cache
+F:\Visual Studio 2015\DIYQrCode\Gma.QrCodeNet.Encoder\obj\Release\Gma.QrCodeNet.Encoding_MarkupCompile.lref
+F:\Visual Studio 2015\DIYQrCode\Gma.QrCodeNet.Encoder\obj\Release\themes\Generic.baml
+F:\Visual Studio 2015\DIYQrCode\Gma.QrCodeNet.Encoder\obj\Release\Gma.QrCodeNet.Encoding.g.resources
+F:\Visual Studio 2015\DIYQrCode\Gma.QrCodeNet.Encoder\obj\Release\Gma.QrCodeNet.Encoding.dll
+F:\Visual Studio 2015\DIYQrCode\Gma.QrCodeNet.Encoder\obj\Release\Gma.QrCodeNet.Encoding.pdb

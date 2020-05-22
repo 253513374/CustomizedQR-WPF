@@ -1,0 +1,351 @@
+﻿<Controls:MetroWindow   x:Class="QrCodeTools.Pages.ShellView"
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:local="clr-namespace:QrCodeTools.Pages"
+          xmlns:s="https://github.com/canton7/Stylet"
+          xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+          xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                        mc:Ignorable="d"
+          Dialog:DialogParticipation.Register="{Binding}"   
+          GlowBrush="{DynamicResource AccentColorBrush}"
+          Title="Stylet Start Project V_0424" Height="650" Width="900"
+          d:DataContext="{d:DesignInstance local:ShellViewModel}">
+    <Controls:MetroWindow.Resources>
+        <Thickness x:Key="ControlMargin">25 0 0 0</Thickness>
+     
+        <Thickness x:Key="ControlMarginH">5</Thickness>
+        <Style x:Key="CustomMetroToggleSwitchButton"
+                       BasedOn="{StaticResource MahApps.Metro.Styles.ToggleSwitchButton}"
+                       TargetType="{x:Type Controls:ToggleSwitchButton}">
+            <Setter Property="OffSwitchBrush" Value="DarkRed" />
+            <Setter Property="OnSwitchBrush" Value="DarkGreen" />
+        </Style>
+    </Controls:MetroWindow.Resources>
+
+     
+    <Grid VerticalAlignment="Stretch" 
+          HorizontalAlignment="Stretch"
+           Background="{DynamicResource AccentColorBrush4}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"></ColumnDefinition>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        
+        <Grid  Grid.Column="0"  >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="128"></RowDefinition>
+                <RowDefinition Height="8"></RowDefinition>
+                <RowDefinition Height="100*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0"  Visibility="Hidden">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"></ColumnDefinition>
+                    <ColumnDefinition Width="50*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <!--<wfi:WindowsFormsHost Background="White"  >
+                    <Emgu:ImageBox x:Name="emguimgbox" BorderStyle="None" SizeMode="Zoom" />
+                </wfi:WindowsFormsHost>-->
+                  <Image Source="{Binding LogBitmaps,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" 
+                   HorizontalAlignment="Center"
+                   Margin="5"
+                    x:Name="ImgLogContorl"  
+                  Grid.Column="0"
+                   />
+
+                <Border Grid.Column="1"  
+                       
+                        CornerRadius="5">
+                    <StackPanel  DataContext="{Binding DrawingOptions,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"> 
+                        <WrapPanel Margin="{StaticResource ControlMargin}" >
+                            <Label Content="码眼1"
+                                     
+                                      Margin="{StaticResource ControlMarginH}"></Label>
+                            <!--<hc:ColorPicker  > </hc:ColorPicker>-->
+                            <Rectangle Width="60" Fill="Black" Tag="1"
+                                       Name="TagColorOne" 
+                                       MouseLeftButtonDown="TagColor_MouseLeftButtonDown">
+                            </Rectangle>
+
+                            <ComboBox Width="128" Tag="1"
+                                       SelectedItem="{Binding qrCodeTag1, UpdateSourceTrigger=PropertyChanged}"
+                                      ItemsSource="{Binding QrCodeTagEnums, UpdateSourceTrigger=PropertyChanged}"
+                                     
+                                      Margin="10,0,0,0" SelectionChanged="ComboBox_SelectionChanged"></ComboBox>
+                        </WrapPanel>
+                        
+                        <WrapPanel Margin="{StaticResource ControlMargin}">
+                            <Label Content="码眼2" Margin="{StaticResource ControlMarginH}" ></Label>
+                            <Rectangle Width="60" Fill="Black" Tag="2"
+                                       Name="TagColorTwo" 
+                                       MouseLeftButtonDown="TagColor_MouseLeftButtonDown">
+
+                            </Rectangle>
+                            <ComboBox Width="128"  Tag="2"
+                                      SelectedItem="{Binding qrCodeTag2, UpdateSourceTrigger=PropertyChanged}"
+                                      ItemsSource="{Binding QrCodeTagEnums}"
+                                      Margin="10,0,0,0" SelectionChanged="ComboBox_SelectionChanged"></ComboBox>
+                        </WrapPanel>
+                        
+                        <WrapPanel Margin="{StaticResource ControlMargin}">
+                            <Label Content="码眼3" Margin="{StaticResource ControlMarginH}"></Label>
+                            <Rectangle Width="60" Fill="Black" Tag="3"
+                                       Name="TagColorThree" 
+                                       MouseLeftButtonDown="TagColor_MouseLeftButtonDown">
+
+                            </Rectangle>
+                            <ComboBox Width="128" Tag="3"
+                                        SelectedItem="{Binding qrCodeTag3, UpdateSourceTrigger=PropertyChanged}"
+                                      ItemsSource="{Binding QrCodeTagEnums}"
+                                      Margin="10,0,0,0" SelectionChanged="ComboBox_SelectionChanged"></ComboBox>
+                        </WrapPanel>
+
+                        <WrapPanel Margin="{StaticResource ControlMargin}">
+                            <Label Content="点  阵" Margin="{StaticResource ControlMarginH}"></Label>
+                            <Rectangle Width="60" Fill="Black" Tag="4"
+                                       Name="TagColorContent" 
+                                       MouseLeftButtonDown="TagColor_MouseLeftButtonDown">
+
+                            </Rectangle>
+                            
+                            <!--<ComboBox Width="55" Tag="4"
+                                        SelectedItem="{Binding qrCodeTag4, UpdateSourceTrigger=PropertyChanged}"
+                                      ItemsSource="{Binding QrCodeTagEnums}"
+                                      Margin="10,0,0,0" SelectionChanged="ComboBox_SelectionChanged"></ComboBox>-->
+                            <Label>大小:</Label>
+                            <ComboBox Width="100" Tag="4"
+                                        SelectedItem="{Binding qrCodeSquareSize, UpdateSourceTrigger=PropertyChanged}"
+                                      ItemsSource="{Binding QrCodeSquareSizes}"
+                                      SelectionChanged="ComboBoxSzie_SelectionChanged"></ComboBox>
+
+                        </WrapPanel>
+
+
+
+                    </StackPanel>
+                </Border>
+            </Grid>
+           
+            <Separator  Grid.Row="1"  ></Separator>
+
+
+            <Border   Grid.Row="2" CornerRadius="15" >
+
+                <Image Source="{Binding BitmapSource,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" 
+                       HorizontalAlignment="Center"
+                       Margin="15"
+                       x:Name="ImgContorl"  
+                       Grid.Column="0" 
+                       Stretch="None"
+                   >
+                    <Image.ContextMenu>
+                        <ContextMenu >
+                            <MenuItem Header="另存为" Name="FiilSaveAs" Click="FiilSaveAs_Click" ></MenuItem>
+                        </ContextMenu>
+                    </Image.ContextMenu>
+                </Image>
+            </Border>
+        </Grid>
+
+        <Border  Grid.Column="1" 
+                 Margin="15"
+                 CornerRadius="15" 
+                 Background="{DynamicResource AccentColorBrush3}" >
+
+            <StackPanel Margin="{StaticResource ControlMarginH }"
+                        Name="StackPanelTop"
+                        HorizontalAlignment="Stretch"
+                        DataContext="{Binding DrawingOptions,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}">
+
+                <TextBlock  Margin="{StaticResource ControlMarginH }" HorizontalAlignment="Left" >URL或其他文本:</TextBlock>
+                <TextBox  Height="85"
+                              Margin="{StaticResource ControlMarginH }"
+                            Width="300"
+                            TextWrapping="Wrap"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Controls:TextBoxHelper.ClearTextButton="True"
+                            Controls:TextBoxHelper.Watermark="请输入生成二维码的文本内容"
+                            Name="QrRichTextBox" Text="{Binding QrText, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                            SpellCheck.IsEnabled="True" 
+                            TextChanged="RichTextBox_TextChanged" 
+                            MouseDoubleClick="RichTextBox_MouseDoubleClick" />
+                <TextBlock HorizontalAlignment="Left" Text="添加图片(Log)" 
+                           Margin="{StaticResource ControlMarginH}"/>
+                <WrapPanel Margin="{StaticResource ControlMarginH }" IsEnabled="False">
+                    
+                    <TextBox  HorizontalAlignment="Left" 
+                           Controls:TextBoxHelper.ClearTextButton="True"
+                           Controls:TextBoxHelper.Watermark="请输入LOGO文件路径"
+                           IsReadOnly="False"
+                           Width="193"
+                           Text="{Binding LogoImgPath,UpdateSourceTrigger=PropertyChanged}"
+                           MouseDoubleClick="TextBox_MouseDoubleClick"
+                           TextChanged="TextBox_TextChanged"/>
+                    <CheckBox Content="填充"   Margin="{StaticResource ControlMargin}"
+                              IsChecked="{Binding IsTopLogoImg, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"></CheckBox>
+
+                </WrapPanel>
+               
+
+
+
+
+
+
+                <WrapPanel Margin="{StaticResource ControlMarginH}">
+                    <RadioButton HorizontalAlignment="Left" Name="RadioButtonpxAotu" 
+                                 IsChecked="{Binding IsQrCodeAutoSize, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                 Content="自动尺寸:  " 
+                                 GroupName="Group" />
+                    <TextBox Width="85"  
+                              Margin="{StaticResource ControlMargin}"
+                                     IsEnabled="{Binding ElementName=RadioButtonpxAotu, Path=IsChecked}"
+                                     Text="{Binding MudelSize, UpdateSourceTrigger=PropertyChanged}" ></TextBox>
+                </WrapPanel>
+
+
+
+                <WrapPanel  Margin="{StaticResource ControlMarginH}" >
+                    <RadioButton HorizontalAlignment="Left"
+                            x:Name="RadioButtonpx" 
+                            IsChecked="{Binding IsTypeSizePX}"  
+                            GroupName="Group" 
+                            Content="大小(像素):" />
+                    <TextBox Width="85"   Margin="{StaticResource ControlMargin}"
+                             IsEnabled="{Binding ElementName=RadioButtonpx, Path=IsChecked}"
+                             Text="{Binding QrCodePixelWidth}"
+                             Name="WidthPiex"/>
+                </WrapPanel>
+
+
+                <WrapPanel Margin="{StaticResource ControlMarginH}">
+                    <RadioButton  Name="RadioButtonmm" 
+                                  VerticalAlignment="Center" 
+                                  HorizontalAlignment="Left"
+                                 IsChecked="{Binding IsTypeSizeMM}"
+                                 GroupName="Group" Content="尺寸(毫米):"  />
+                    <TextBox  Margin="{StaticResource ControlMargin}"
+                                 HorizontalAlignment="Left"
+                                 Controls:TextBoxHelper.Watermark="最小默认 100 像素"
+                                 Text="{Binding QrCodeWidthMM, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True}" 
+                                 Width="85"
+                                 IsEnabled="{Binding ElementName=RadioButtonmm, Path=IsChecked}"/>
+
+
+                </WrapPanel>
+                
+                <WrapPanel  Margin="{StaticResource ControlMarginH}">
+                    <TextBlock Text="像素密度(DPI): " VerticalAlignment="Center"/>
+                    <ComboBox IsEnabled="{Binding ElementName=RadioButtonmm, Path=IsChecked}" 
+                                      Width="85" ItemsSource="{Binding DpiInchs}" 
+                                      SelectedItem="{Binding DpiInch}"
+                               Margin="{StaticResource ControlMargin}"/>
+                </WrapPanel>
+
+
+
+                <StackPanel Margin="{StaticResource ControlMarginH}">
+                    <TextBlock Text="二维码类型" HorizontalAlignment="Left"></TextBlock>
+                    <ComboBox Width="250" HorizontalAlignment="Left"
+                                  ItemsSource="{Binding QrCodeTypes}"
+                                  SelectedItem="{Binding QrCodeTypeEnum}"></ComboBox>
+
+                </StackPanel>
+
+                <WrapPanel  Margin="{StaticResource ControlMarginH}">
+                    <StackPanel  >
+                        <TextBlock Text="白线宽度" HorizontalAlignment="Left"/>
+                        <ComboBox Width="125" HorizontalAlignment="Left"
+                                  
+                                   ItemsSource="{Binding ListdoubleFromats, UpdateSourceTrigger=PropertyChanged}"
+                                  SelectedItem="{Binding widthdoubleFromat}"/>
+                    </StackPanel>
+                    <StackPanel  Margin="{StaticResource ControlMargin}">
+                        <TextBlock Text="白线分布密度" HorizontalAlignment="Left"/>
+                        <ComboBox Width="125" HorizontalAlignment="Left"
+                                  
+                                   ItemsSource="{Binding densitydoubleFromats, UpdateSourceTrigger=PropertyChanged}"
+                                  SelectedItem="{Binding densitydoubleFromat}"/>
+                    </StackPanel>
+
+                </WrapPanel>
+
+                <WrapPanel  Margin="{StaticResource ControlMarginH}">
+                    <StackPanel >
+                        <TextBlock Text="图像格式" HorizontalAlignment="Left"/>
+                        <ComboBox Width="125" HorizontalAlignment="Left"
+                                   ItemsSource="{Binding ImageFromats, UpdateSourceTrigger=PropertyChanged}"
+                                  SelectedItem="{Binding ImageFromat}"/>
+                    </StackPanel>
+                    <StackPanel Margin="{StaticResource ControlMargin}">
+                        <TextBlock Text="边缘留白" HorizontalAlignment="Left" />
+                        <ComboBox HorizontalAlignment="Left" Width="125" 
+                              ItemsSource="{Binding QuietZoneModuleComboBox}" SelectedItem="{Binding QuietZoneModule,UpdateSourceTrigger=PropertyChanged}"></ComboBox>
+                    </StackPanel>
+                </WrapPanel>
+                
+                <WrapPanel Margin="{StaticResource ControlMarginH}">
+
+                    <StackPanel >
+                        <TextBlock Text="纠错级别:" HorizontalAlignment="Left" />
+                        <ComboBox HorizontalAlignment="Left" Width="125"
+                                ItemsSource="{Binding ErrorCorrectionLevelComboBox}"  SelectedItem="{Binding errorCorrectionLevel, UpdateSourceTrigger=PropertyChanged}" />
+
+                    </StackPanel>
+
+                    <StackPanel Visibility="Hidden"  Margin="{StaticResource ControlMargin}" >
+                        <TextBlock>掩码</TextBlock>
+                        <ComboBox HorizontalAlignment="Right" Width="125"
+                                       ItemsSource="{Binding MaskPatternTypes}"
+                                      SelectedItem="{Binding PatternType, UpdateSourceTrigger=PropertyChanged}"
+                                      />
+                    </StackPanel>
+                   
+                </WrapPanel>
+               
+
+                <WrapPanel Margin="{StaticResource ControlMargin}" >
+                    <Button Click="EnQrButton_Click" 
+                        x:Name="EnQrButton" 
+                        Content="预览"
+                      
+                        Height="35" Width="80" Margin="10" 
+                       />
+                    <Button Content="批量导出" Name="ExpButton"
+                               
+                             Height="35" Width="80" Margin="10" 
+                                Click="ExpButton_Click"
+                            />
+                    <Button Content="导出Json" Visibility="Hidden" Name="ExpJsonButton"
+                               
+                             Height="35" Width="80" Margin="10" 
+                                Click="ExpJsonButton_Click"
+                            />
+                    <Button Click="Button_Click" 
+                                Content="dasdasdasd" Visibility="Hidden"/>
+                </WrapPanel>
+            </StackPanel>
+        </Border>
+
+
+
+        <Button Visibility="Hidden" Name="ExpButtonCommand" Command="{s:Action Exportfiles}"></Button>
+        <Button Visibility="Hidden" Name="FileListButton" Command="{s:Action GetFileList}"></Button>
+        <Button Visibility="Hidden" Name="LogBitmapButton" Command="{s:Action ShowLogBitmap}"></Button>
+
+        <Button Visibility="Hidden" Name="ExpJsonCommand" Command="{s:Action ExpJsonCommand}"></Button>
+
+        <Button Visibility="Hidden" Name="EnQrButtonCommand"   Command="{s:Action EnQrCode}"/>
+        
+        <Button Visibility="Hidden" Name="QrCodeTagOneButton" Command="{s:Action QrCodeTagOneCommand}"></Button>
+
+        <Button Visibility="Hidden" Name="SaveFileAs" Command="{s:Action FiilSaveAsCommand}"></Button>
+        
+        
+    </Grid>
+
+</Controls:MetroWindow>
